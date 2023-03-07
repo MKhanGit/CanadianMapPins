@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Canaian Map Pins (BETA)</title>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDgvZkTi_68XxxXykMFObK3Rkw6JoB5DKk"></script>
+    <script src="app.js"></script>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body onload="mapInit()">
+    <form>
+    <div class="soft-border" id="app-title">
+        <div class="button-spanner">
+          <button type="button" id="reset-map" onclick="location.reload()" class="btn-custom reset-btn">Reset Map</button>
+        </div>
+        <div class="button-spanner">
+          <input type="file" id="csvFile" name="csvFile" accept=".csv"  hidden="true" />
+          <label for="csvFile" class="btn-custom" id="file-label">Select a CSV file to upload</label>
+        </div>
+        <div class="button-spanner">
+          <button type="button" id="download-btn" class="btn-custom dl-btn">CSV Template</button>
+        </div>
+        <div class="title-spanner" id="app-title-spanner">
+          Canadian Map Pins
+        </div>
+    </div>
+    <div class="soft-border-tagline">
+      Save and Share your POIs
+    </div>
+  </form>
+    <div id="map"></div>
+    <div class="soft-border" id="share-wrapper"  style="text-align: center;">
+      <div class="button-spanner">
+        <button type="button" id="share-btn" class="btn-custom share-btn" >Generate Share Link</button>
+        <button type="button" id="copy-btn" class="btn-custom copy-btn">Copy Link</button>
+        <a href="" target="_blank" id="share-link" class="btn-custom share-tag"></a><span id="copy-msg"></span>
+      </div>
+    </div>
+  </body>
+</html>
