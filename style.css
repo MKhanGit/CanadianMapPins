@@ -69,7 +69,44 @@
   cursor: pointer;
   margin: 10px;
 }
+.spn-custom {
+  display: inline-block;
+  border-radius: 5px;
+  padding: 8px 16px;
+  background-color: #a2d5c6;
+  color: #333;
+  font-size: 16px;
+  text-align: center;
+  margin: 10px;
+}
 
+.lgd-purple{
+  background-color: #a629db;
+  color: #fff;
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+.lgd-orange{
+  background-color: #f57c00;
+  color: #333;
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+.lgd-yellow{
+  background-color: #fbc02d;
+  color: #333;
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+.lgd-green{
+  background-color: #43a047;
+  color: #333;
+  font-weight: bold;
+  font-size: 1.5rem;
+}
 .btn-custom:hover {
   background-color: #558b6e;
 }

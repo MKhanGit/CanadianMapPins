@@ -234,6 +234,9 @@ function mapInit() {
   if(savedMapId == "default"){
     savedMapId = defaultMap;
     colorKeyId = defaultColors;
+    shareButton.style.display = 'none';
+    shareLink.style.display = 'none';
+    copyButton.style.display = 'none';
   }
   savedMapData = decodeData(savedMapId);
   savedColorKey = decodeData(colorKeyId);
@@ -241,7 +244,7 @@ function mapInit() {
   console.log(savedMapData);
   if(savedMapData != null){
     locationData = JSON.parse(JSON.stringify(savedMapData));;
-    generateShareLink(savedMapId, colorKeyId);
+    if(savedMapId != defaultMap) generateShareLink(savedMapId, colorKeyId);
     resetButton.style.display = "none";
     downloadBtn.style.display = "none";
     fileLabel.style.display = "none";
