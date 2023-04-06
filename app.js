@@ -268,7 +268,7 @@ function mapInit() {
   }
   else{
     const storedDictString = localStorage.getItem("postal_pinner_locations");
-    locationData = JSON.parse(  );
+    locationData = JSON.parse(storedDictString);
     if (locationData == null){
       console.log("Local store not set!");
       locationData = {};
